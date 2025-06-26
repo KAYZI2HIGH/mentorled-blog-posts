@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📰 Blog Post Viewer
 
-## Getting Started
+A simple and responsive blog post viewer built with **Next.js** and **TypeScript** for the MentorLed internship task.
 
-First, run the development server:
+## 📌 Task Overview
 
-```bash
+**Brief:**  
+Build a blog post viewer that allows users to browse and read articles with a clean UI.
+
+## ✨ Features
+
+- 🔎 **Search Filter** – Filter posts by title in real-time
+- 📄 **Card Layout** – Neatly display each post with title, snippet, and image
+- 🔗 **Optional Routing** – Click a post card to view the full content (via modal or separate route)
+- 📁 **Static JSON** – Blog post data is loaded from a local JSON file
+- 📱 **Fully Responsive** – Works perfectly across mobile and desktop
+- 🎨 **Design Match** – Layout follows the provided Figma/mockup
+
+## 🛠 Tech Stack
+
+- **Next.js** (App Router)
+- **TypeScript**
+- **Tailwind CSS**
+- **Static JSON data**
+
+## 🚀 Getting Started
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/your-username/blog-post-viewer.git
+   cd blog-post-viewer
+Install dependencies:
+
+bash
+Copy
+Edit
+npm install
+Run the dev server:
+
+bash
+Copy
+Edit
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Visit http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📂 Folder Structure (Optional)
+bash
+Copy
+Edit
+/app
+  ├─ /posts             # Page for listing blog posts
+  ├─ /[slug]            # (optional) Page for full post view
+/data
+  └─ posts.json         # Static blog post data
+/components
+  ├─ PostCard.tsx
+  └─ SearchBar.tsx
